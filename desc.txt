@@ -1,0 +1,10 @@
+At the core, Container.h, they provide the arena storage to the whole register. 
+Stores 'Components', components can be anything that uses memory.
+Components are ALWAYS attached to an entity. An entity can only contain 1 of a component type
+
+Group.h can group and store these components in a bunch of tuples for cache optimization. 
+Group the
+
+- Handles should always be references to the original handle
+- Entities can only contain 1 of a component type
+- Group only has entities that have ALL types
